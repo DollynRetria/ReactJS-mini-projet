@@ -6,7 +6,7 @@ Le projet consiste à concevoir un mini-site web qui suivra une structure tradit
 
 ## Fonctionnalités de base
 
-- Page d’accueil : On va laisser vide pour le moment.
+- Page d’accueil : Vide pour le moment.
 - Page liste des produits : Page contenant la liste des produits disponibles à la vente et leurs descriptions.
 - Page détail produit
 - Panier d’achat : système permettant aux utilisateurs de sélectionner des produits et de les ajouter à leur panier d’achat. On aura comme option, la valeur totale des produits pour chaque vendeur. Les fonctionnalités classiques telles que le changement du nombre de produits et aussi la suppression des produits sont prévues. Sur chacun des produits, nous aurons la possibilité d’augmenter/diminuer le nombre de produits et au clic sur le bouton Ajouter au panier/Retirer du panier, le panier sera mis-à-jour automatiquement.
