@@ -1,0 +1,209 @@
+/*===============================*/
+/*==HEADER == HEADER == HEADER ==/
+/*===============================*/
+header{padding:20px 0;}
+.header-top{display:flex; align-items: center; justify-content: space-between;}
+
+.header-top--left{display: flex; align-items: center;}
+.header-top--left-logo{margin-right:25px}
+
+.navigation{margin:0; padding:0; font-size:0; display:flex}
+.navigation li{list-style-type:none; padding:0 20px; }
+.navigation li a{display:inline-block; font-size:20px; line-height:20px; color:#333333; text-decoration: none;}
+
+.header-top--right{
+    position:relative; 
+    height:100%;
+}
+
+.btn-cart{position:relative; display: flex; align-items: center; justify-content:center; border:none; width:30px; height:30px; line-height:30px; background-color:yellow; border-radius:50%}
+
+.btn-cart img{width:15px}
+.btn-cart span.nombre{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    top: -10px;
+    right: -10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*=====================================*/
+/*==ARTICLES == ARTICLES == ARTICLES ===/
+/*=====================================*/
+
+.img-container{
+    position: relative;
+}
+.img-container .btn-container{
+    display: block; 
+    position: absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    text-align: center;
+    z-index: 9;
+}
+
+.img-wrapper{
+    display: block;
+    width:100%;
+    height:300px;
+}
+
+.img-wrapper.no-image{
+    background-color:#333333;
+}
+
+.img-wrapper img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    padding-left:7.5px;
+    padding-right:7.5px;
+}
+
+.card-article-item .card-text{
+    height: 72px;
+    overflow-y:auto;
+    margin-bottom:8px;
+}
+
+.card-article-item .voir-plus-btn{
+    margin-bottom:8px;
+    text-align:right;
+}
+
+.card-article-item .voir-plus-btn a{
+    text-decoration:none;
+    font-weight: bold;
+    color:#333;
+}
+
+
+.price-and-action{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-and-action .price{
+    color:#ebc43a;
+    font-weight: bold;
+}
+
+.price-and-action .action{
+    display: flex;
+}
+
+.price-and-action .action .form-control{
+    width:35px;
+    border-radius:0;
+    text-align:center;
+    padding:0;
+}
+
+.price-and-action .action .btn{
+    width:35px;
+    background-color:#ebc43a;
+    border-radius:0;
+    text-align:center;
+    padding-left:0;
+    padding-right:0;
+}
+
+/*===============================+*/
+/*==PANIER == PANIER == PANIER ===/
+/*================================*/
+.panier-wrapper{
+    display: block;
+    position: absolute;
+    max-height:500px;
+    overflow-y:auto;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    min-width: 400px;
+    background: #999;
+    border: 2px solid #333;
+    padding: 20px;
+    color:white;
+}
+
+.product-par-vendeur strong {display:block; margin:25px 0 15px}
+.product-par-vendeur-item{display: flex; margin-bottom: 20px }
+.ppvi-image{
+    width:175px;
+    height: auto;
+    max-height: 175px
+}
+.ppvi-image.no-image{
+    color:white;
+    padding: 40px 15px;
+    text-align:center;
+    background:#333;
+}
+.ppvi-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ppvi-infos{
+    padding-left:25px;
+}
+
+.btn-action-wrapper button{
+    min-width: 38px;
+    background-color:yellow;
+    font-weight:bold;
+}
+.btn-action-wrapper button:hover{
+    color: black; 
+    background-color:yellow;
+    font-weight:bold;
+}
+
+
+
+
+/*===============================*/
+/*==FOOTER == FOOTER == FOOTER ==/
+/*===============================*/
+footer{display: block; position: relative; background-color:black;  padding:20px 0; font-size:14px;}
+.footer-txt{color:white; }
+.footer-txt span{color: #ebc43a;}
+
+.main-wrapper, .article-details-wrapper, .articles-wrapper{
+    min-height: calc(100vh - 147px);
+}
+
+/*scroll custom chrome*/
+/* width */
+.card-article-item .card-text::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .card-article-item .card-text::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .card-article-item .card-text::-webkit-scrollbar-thumb {
+    background: #ebc43a; 
+  }
+  
+  /* Handle on hover */
+  .card-article-item .card-text::-webkit-scrollbar-thumb:hover {
+    background: #ebc43a; 
+  }
